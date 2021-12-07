@@ -1,0 +1,23 @@
+Colors:
+
+Banner/Footer: #E07A5F
+Background: #F4F1DE
+First Section Text: #3D405B
+Tile 1 Background: #3D405B
+Tile 1 Button/Tile 2 Background: #F2CC8F
+Tile 2 Button/Tile 3 Background: #81B29A
+Tile 3 Button/Tile 4 Background: #E07A5F
+Tile 4 Button: #F4F1DE
+Tile 1 Text Background/Tile 3 Text Background: #F2CC8F
+Tile 2 Text Background/Tile 4 Text Background: #81B29A
+
+Fonts:
+
+Logo: Major Mono Display
+Basic Text: Montserrat
+
+
+
+
+
+
