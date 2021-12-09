@@ -11,18 +11,22 @@
 
 <body>
     <header>
-        <div class="nav-container">
-            <a href="index.html" class="logo-link"><h2 class="logo">BRAIN FOOD</h2></a>
-        
-            <nav>
-                <ul>
-                    <li><a href="tile1.html">CULTURE 1</a></li>
-                    <li><a href="tile2.html">CULTURE 2</a></li>
-                    <li><a href="tile3.html">CULTURE 3</a></li>
-                    <li><a href="tile4.html">CULTURE 4</a></li>
-                </ul>
-            </nav>
-        </div>
+            <div class="nav-container">
+        <nav class="navbar">
+            <a href="index.html" id="logo-link"><h4 id="navbar-logo"> BRAIN FOOD </h4></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class = "nav-menu">
+                <li><a href="china.html" class="nav-items">China</a></li>
+                <li><a href="india.html" class="nav-items">India</a></li>
+                <li><a href="mexico.html" class="nav-items">Mexico</a></li>
+                <li><a href="italy.html" class="nav-items">Italy</a></li>
+            </ul>
+        </nav>
+    </div>
     </header>
 
     <main id="d-home">
@@ -34,32 +38,33 @@
         </section>
     
         <section id="tiles">
+        
             <div id="img-tile-one">
                 <figure><img src="images/dummy_image.png"></figure>
             </div>
 
             <div id="food-tile-one">
-                <h4>CULTURE 1</h4>
+                <h4>CHINA</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Fames ac turpis egestas maecenas pharetra convallis. 
                 Mollis nunc sed id semper risus in hendrerit. Magnis dis 
                 parturient montes nascetur ridiculus mus.</p>
-                <button class="button-one"><a href="tile1.html">Learn More</button>
+                <button class="button-one"><a href="tile1.html">Learn More</a></button>
+            </div>
+
+            <div id="food-tile-two">
+                <h4>INDIA</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Fames ac turpis egestas maecenas pharetra convallis. 
+                Mollis nunc sed id semper risus in hendrerit. Magnis dis 
+                parturient montes nascetur ridiculus mus.</p>
+                <button class="button-two"><a href="tile2.html">Learn More</a></button>
             </div>
 
             <div id="img-tile-two">
                 <figure><img src="images/dummy_image.png"></figure>
-            </div>
-
-            <div id="food-tile-two">
-                <h4>CULTURE 1</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Fames ac turpis egestas maecenas pharetra convallis. 
-                Mollis nunc sed id semper risus in hendrerit. Magnis dis 
-                parturient montes nascetur ridiculus mus.</p>
-                <button class="button-two"><a href="tile2.html">Learn More</button>
             </div>
 
             <div id="img-tile-three">
@@ -67,35 +72,38 @@
             </div>
 
             <div id="food-tile-three">
-                <h4>CULTURE 1</h4>
+                <h4>MEXICO</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Fames ac turpis egestas maecenas pharetra convallis. 
                 Mollis nunc sed id semper risus in hendrerit. Magnis dis 
                 parturient montes nascetur ridiculus mus.</p>
-                <button class="button-three"><a href="tile3.html">Learn More</button>
+                <button class="button-three"><a href="tile3.html">Learn More</a></button>
+            </div>
+
+            <div id="food-tile-four">
+                <h4>ITALY</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Fames ac turpis egestas maecenas pharetra convallis. 
+                Mollis nunc sed id semper risus in hendrerit. Magnis dis 
+                parturient montes nascetur ridiculus mus.</p>
+                <button class="button-four"><a href="tile4.html">Learn More</a></button>
             </div>
 
             <div id="img-tile-four">
                 <figure><img src="images/dummy_image.png"></figure>
             </div>
-
-            <div id="food-tile-four">
-                <h4>CULTURE 1</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Fames ac turpis egestas maecenas pharetra convallis. 
-                Mollis nunc sed id semper risus in hendrerit. Magnis dis 
-                parturient montes nascetur ridiculus mus.</p>
-                <button class="button-four"><a href="tile4.html">Learn More</button>
-            </div>
+            
         </section>
     </main>
 
     <footer class="proj-contribute">
-        <h5>Anastasiia Haioshko</h5>
-        <h5>Kellie Ortiz</h5>
-        <h5>Malachi Samuels</h5>
+        <div class="names">
+            <h5>Anastasiia Haioshko</h5>
+            <h5>Kellie Ortiz</h5>
+            <h5>Malachi Samuels</h5>
+        </div>
     </footer>
 
     <script src="js/hamburger_menu.js"></script>

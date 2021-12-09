@@ -1,0 +1,218 @@
+/*Fonts Import*/
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat&display=swap');
+
+/*NAV*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+p,h3,h4,h4{
+    color: #3D405B;
+}
+#d-home{
+    background-color: #F4F1DE;
+}
+.nav-container{
+    width: 100%;
+    background-color: #E07A5F;
+}
+.navbar{
+    display: grid;
+    grid-template-columns: 0.2fr auto 1fr;
+    align-items: center;
+    height: 80px;
+    width: 90%;
+    max-width: 1720px;
+    margin: 0 auto;
+}
+#navbar-logo{
+    color: white;
+    justify-self: start;
+    margin-left: 20px;
+    font-family: 'Major Mono Display', monospace;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1.3em;
+}
+.nav-menu{
+    display:grid;
+    grid-template-columns: repeat(5,auto);
+    list-style: none;
+    text-align: center;
+    width: 70%;
+    justify-self: end;
+}
+.nav-links{
+    color: white;
+    text-decoration: none;
+}
+.menu-toggle .bar{
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+.nav-menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+#logo-link{
+    text-decoration: none;
+}
+/*HOME*/
+.about{
+    padding: 15px;
+    text-align: center;
+}
+.about p{
+    padding: 15px;
+}
+#tiles img{
+    width: 300px;
+    height: 300px;
+}
+#tiles p, h4{
+    color:white;
+}
+.button-one{
+    color: #3D405B;
+    background-color: #F2CC8F;
+    border-radius: 4px;
+}
+.button-two{
+    color: #3D405B;
+    background-color: #81B29A;
+    border-radius: 4px;
+}
+.button-three{
+    color: #3D405B;
+    background-color: #E07A5F;
+    border-radius: 4px;
+}
+.button-four{
+    color: #3D405B;
+    background-color: #F4F1DE;
+    border-radius: 4px;
+}
+#food-tile-one a, #food-tile-two a, #food-tile-three a, #food-tile-four a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#food-tile-one{
+    background-color: #3D405B;
+}
+#food-tile-two{
+    background-color: #F2CC8F;
+}
+#food-tile-three{
+    background-color: #81B29A;
+}
+#food-tile-four{
+    background-color: #E07A5F;
+}
+.proj-contribute{
+    background-color: #E07A5F;
+}
+.proj-contribute h5{
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+.names{
+    padding:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MOBILE*/
+@media screen and (max-width: 768px){
+/*NAV*/
+    .nav-container{
+        position: relative;
+    }
+    .nav-menu{
+        display: grid;
+        grid-template-columns: auto;
+        background: #E07A5F;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 0;
+        transition: all 0.5s ease;
+    }
+    #navbar-logo{
+        margin-left: 20px;
+    }
+    .nav-menu.active{
+        background: #E07A5F;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+    .nav-links{
+        text-align: center;
+        line-height: 20px;
+        width: 100px;
+        display: table;
+    }
+    .navbar{
+      width: 100%  
+    }
+    #mobile-menu{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+    .menu-toggle .bar{
+        display: block;
+        cursor: pointer;
+    }
+    .menu-toggle:hover{
+        cursor: pointer;
+    }
+    #mobile-menu.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+    #mobile-menu.is-active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    #mobile-menu.is-active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
