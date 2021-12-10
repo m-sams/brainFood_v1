@@ -157,6 +157,7 @@ figure > img{
 .row-1, .row-2, .row-3, .row-4{
     display: flex;
 }
+/*FOOTER*/
 .proj-contribute{
     background-color: #E07A5F;
 }
@@ -172,6 +173,7 @@ figure > img{
 /*SEPARATE TILE PAGES*/
 .d-tile{
     background-color: #F4F1DE;
+  
 }
 .about p{
     color:  #3D405B;
