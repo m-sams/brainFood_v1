@@ -173,6 +173,7 @@ figure > img{
 /*SEPARATE TILE PAGES*/
 .d-tile{
     background-color: #F4F1DE;
+    padding-bottom: 60px;
   
 }
 .about p{
