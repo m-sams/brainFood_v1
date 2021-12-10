@@ -11,6 +11,10 @@
 p,h3,h4,h4{
     color: #3D405B;
 }
+body{
+    background-color: #F4F1DE;
+}
+
 #d-home{
     background-color: #F4F1DE;
 }
@@ -72,52 +76,85 @@ p,h3,h4,h4{
 .about p{
     padding: 15px;
 }
-#tiles img{
-    width: 300px;
-    height: 300px;
+#tiles{
+    padding-bottom: 15px;
 }
 #tiles p, h4{
     color:white;
+    text-align: center;
+    padding: 10px;
 }
-.button-one{
+#tiles h4{
+    font-weight: bold;
+}
+button > a{
     color: #3D405B;
+    text-decoration: none;
+    padding: 20px;
+    font-weight: bold;
+}
+.btn-space{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.btn-one{
     background-color: #F2CC8F;
     border-radius: 4px;
 }
-.button-two{
-    color: #3D405B;
+.btn-two{
     background-color: #81B29A;
     border-radius: 4px;
 }
-.button-three{
-    color: #3D405B;
+.btn-three{
     background-color: #E07A5F;
     border-radius: 4px;
 }
-.button-four{
-    color: #3D405B;
+.btn-four{
     background-color: #F4F1DE;
     border-radius: 4px;
 }
-#food-tile-one a, #food-tile-two a, #food-tile-three a, #food-tile-four a{
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2em;
+.btn-one, .btn-two, .btn-three, .btn-four{
+    color: #3D405B; 
+    border-radius: 4px;
     padding: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
 }
-#food-tile-one{
+figure > img{
+    width:600px;
+    height:300px;
+}
+#food-tile-india{
     background-color: #3D405B;
+    width: 50%;
 }
-#food-tile-two{
+#img-tile-india{
+    width: 50%;
+}
+#food-tile-italy{
     background-color: #F2CC8F;
+    width: 50%;
 }
-#food-tile-three{
+#img-tile-italy{
+    width: 50%;
+}
+#food-tile-china{
     background-color: #81B29A;
+    width: 50%;
 }
-#food-tile-four{
+#img-tile-china{
+    width: 50%;
+}
+#food-tile-mexico{
     background-color: #E07A5F;
+    width: 50%;
+}
+#img-tile-mexico{
+    width: 50%;
+}
+.row-1, .row-2, .row-3, .row-4{
+    display: flex;
 }
 .proj-contribute{
     background-color: #E07A5F;
@@ -130,6 +167,147 @@ p,h3,h4,h4{
 .names{
     padding:20px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CHINA*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.d-tile{
+    background-color: #F4F1DE;
+}
+.t-intro{
+    display: flex;
+    padding-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+}
+/*.t-intro img{
+    width: 50%;
+}*/
+.title-tile-two h1{
+    color: white;
+    text-align: center;
+    /*padding: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;*/
+}
+.title-tile-two{
+    background-color: #3D405B;
+    width: 50%;
+    flex: 1;
+}
+.photo-tile-two{
+    flex: 1;
+}
+.photo-tile-two img{
+    height: 300px;
+}
+.more-info{
+    padding-bottom:15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#info-text-one{
+    padding-bottom: 15px;
+    background-color: #F2CC8F;
+    width: 50%;
+    height: 500px;
+}
+#info-text-one p{
+    padding: 15px;
+    margin: 15px;
+}
+
 
 
 
@@ -214,5 +392,9 @@ p,h3,h4,h4{
     }
     #mobile-menu.is-active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
+    }
+    /*HOME*/
+    .row-1, .row-2, .row-3, .row-4{
+        display: block;
     }
 }
