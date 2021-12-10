@@ -121,6 +121,7 @@ button > a{
     border-radius: 4px;
     padding: 10px;
 }
+/*ALL IMAGES STYLE*/
 figure > img{
     width:600px;
     height:300px;
@@ -168,145 +169,168 @@ figure > img{
     padding:20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*CHINA*/
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-}
+/*SEPARATE TILE PAGES*/
 .d-tile{
     background-color: #F4F1DE;
 }
-.t-intro{
+.about p{
+    color:  #3D405B;
+}
+.row{
     display: flex;
     padding-bottom: 15px;
     justify-content: center;
     align-items: center;
 }
-/*.t-intro img{
-    width: 50%;
-}*/
-.title-tile-two h1{
+/*CHINA*/
+.food-tile-two-china h1, p{
     color: white;
     text-align: center;
-    /*padding: 100px;
-    margin-top: 50px;
-    margin-bottom: 50px;*/
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-.title-tile-two{
+.food-tile-two-china{
     background-color: #3D405B;
     width: 50%;
     flex: 1;
 }
-.photo-tile-two{
+.img-tile-two-china{
     flex: 1;
-}
-.photo-tile-two img{
-    height: 300px;
+    width: 50%;
 }
 .more-info{
-    padding-bottom:15px;
+    padding-bottom: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
-#info-text-one{
+#info-text-china{
+    /*display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 50%;
+}
+#info-text-china p{
+    color: white;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    background-color: #F2CC8F;
+}
+/*INDIA*/
+.food-tile-two-india h1, p{
+    color: white;
+    text-align: center;
     padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.food-tile-two-india{
     background-color: #F2CC8F;
     width: 50%;
-    height: 500px;
+    flex: 1;
 }
-#info-text-one p{
-    padding: 15px;
-    margin: 15px;
+.img-tile-two-india{
+    flex: 1;
+    width: 50%;
 }
+.more-info{
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#info-text-india{
+    /*display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 50%;
+}
+#info-text-india p{
+    color: white;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    background-color: #81B29A;
+}
+/*ITALY*/
+.food-tile-two-italy h1, p{
+    color: white;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.food-tile-two-italy{
+    background-color: #F2CC8F;
+    width: 50%;
+    flex: 1;
+}
+.img-tile-two-italy{
+    flex: 1;
+    width: 50%;
+}
+.more-info{
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#info-text-italy{
+    /*display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 50%;
+}
+#info-text-italy p{
+    color: white;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    background-color: #81B29A;
+}
+/*MEXICO*/
+.food-tile-two-mex h1, p{
+    color: white;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.food-tile-two-mex{
+    background-color: #3D405B;
+    width: 50%;
+    flex: 1;
+}
+.img-tile-two-mex{
+    flex: 1;
+    width: 50%;
+}
+.more-info{
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#info-text-mex{
+    /*display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 50%;
+}
+#info-text-mex p{
+    color: white;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    background-color: #F2CC8F;
+}
+
 
 
 
