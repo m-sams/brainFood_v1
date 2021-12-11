@@ -350,18 +350,6 @@ figure > img{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*MOBILE*/
 @media screen and (max-width: 768px){
 /*NAV*/
@@ -423,5 +411,34 @@ figure > img{
     /*HOME*/
     .row-1, .row-2, .row-3, .row-4{
         display: block;
+    }
+    #food-tile-india, #food-tile-italy, #food-tile-china, #food-tile-mexico{
+        width: 100%;
+    }
+    #img-tile-india, #img-tile-italy, #img-tile-china, #img-tile-mexico{
+        width: 100%;
+        height: 100%;
+    }
+    #img-tile-india img, #img-tile-italy img, #img-tile-china img, #img-tile-mexico img{
+        width: 100%;
+        height: 100%;
+    }
+    /*TILES*/
+    .row{
+        display: block;
+    }
+    .food-tile-two-india, .food-tile-two-italy, .food-tile-two-china, .food-tile-two-mex{
+        width: 100%;
+    }
+    .img-tile-two-india, .img-tile-two-italy, .img-tile-two-china, .img-tile-two-mex{
+        width: 100%;
+        height: 100%;
+    }
+    .img-tile-two-india img, .img-tile-two-italy img, .img-tile-two-china img, .img-tile-two-mex img{
+        width: 100%;
+        height: 100%;
+    }
+    #info-text-india, #info-text-italy, #info-text-china, #info-text-mex{
+        width: 100%;
     }
 }
