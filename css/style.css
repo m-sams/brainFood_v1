@@ -1,6 +1,22 @@
 /*Fonts Import*/
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat&display=swap');
 
+/*ALL IMAGES STYLE*/
+/* ================= Use Border Box model ================= */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* ================= Basic Responsive Images and Video ================= */
+  img,video{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+  }
+
 /*NAV*/
 *{
     box-sizing: border-box;
@@ -76,17 +92,7 @@ body{
 .about p{
     padding: 15px;
 }
-#tiles{
-    padding-bottom: 15px;
-}
-#tiles p, h4{
-    color:white;
-    text-align: center;
-    padding: 10px;
-}
-#tiles h4{
-    font-weight: bold;
-}
+
 button > a{
     color: #3D405B;
     text-decoration: none;
@@ -121,42 +127,47 @@ button > a{
     border-radius: 4px;
     padding: 10px;
 }
-/*ALL IMAGES STYLE*/
-figure > img{
-    width:600px;
-    height:300px;
+#tiles{
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display:grid;
+  grid-auto-rows: minmax(300px, auto); 
+}
+#tiles p, h4{
+    color:white;
+    text-align: center;
+    padding: 10px;
+}
+#tiles h4{
+    font-weight: bold;
 }
 #food-tile-india{
     background-color: #3D405B;
-    width: 50%;
 }
 #img-tile-india{
-    width: 50%;
+  background-image: url(https://images.unsplash.com/photo-1635859335886-92da36c2de3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+/*   min-height: 400px; */
 }
 #food-tile-italy{
     background-color: #F2CC8F;
-    width: 50%;
 }
 #img-tile-italy{
-    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1635859335886-92da36c2de3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
 }
 #food-tile-china{
     background-color: #81B29A;
-    width: 50%;
 }
 #img-tile-china{
-    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1635859335886-92da36c2de3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
 }
 #food-tile-mexico{
     background-color: #E07A5F;
-    width: 50%;
 }
 #img-tile-mexico{
-    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1635859335886-92da36c2de3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
 }
-.row-1, .row-2, .row-3, .row-4{
-    display: flex;
-}
+
 /*FOOTER*/
 .proj-contribute{
     background-color: #E07A5F;
@@ -173,17 +184,18 @@ figure > img{
 /*SEPARATE TILE PAGES*/
 .d-tile{
     background-color: #F4F1DE;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
   
 }
 .about p{
     color:  #3D405B;
 }
-.row{
-    display: flex;
-    padding-bottom: 15px;
-    justify-content: center;
-    align-items: center;
+.t-intro{
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display:grid;
+  grid-auto-rows: minmax(300px, auto);
 }
 /*CHINA*/
 .food-tile-two-china h1, p{
@@ -195,32 +207,28 @@ figure > img{
 }
 .food-tile-two-china{
     background-color: #3D405B;
-    width: 50%;
-    flex: 1;
 }
 .img-tile-two-china{
-    flex: 1;
-    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1635859335886-92da36c2de3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
 }
 .more-info{
-    padding-bottom: 15px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#info-text-china{
-    /*display: flex;
-    justify-content: center;
-    align-items: center; */
-    width: 50%;
-}
 #info-text-china p{
     color: white;
     text-align: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 15px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-color: #F2CC8F;
+}
+#info-text-china{
+    width: 50%;
 }
 /*INDIA*/
 .food-tile-two-india h1, p{
@@ -231,24 +239,13 @@ figure > img{
     padding-right: 15px;
 }
 .food-tile-two-india{
-    background-color: #F2CC8F;
-    width: 50%;
-    flex: 1;
+    background-color: #F2CC8F; 
 }
 .img-tile-two-india{
-    flex: 1;
-    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1635859335886-92da36c2de3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
 }
-.more-info{
-    padding-bottom: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 #info-text-india{
-    /*display: flex;
-    justify-content: center;
-    align-items: center; */
     width: 50%;
 }
 #info-text-india p{
@@ -268,24 +265,13 @@ figure > img{
     padding-right: 15px;
 }
 .food-tile-two-italy{
-    background-color: #F2CC8F;
-    width: 50%;
-    flex: 1;
+    background-color: #F2CC8F; 
 }
 .img-tile-two-italy{
-    flex: 1;
-    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1635859335886-92da36c2de3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
 }
-.more-info{
-    padding-bottom: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 #info-text-italy{
-    /*display: flex;
-    justify-content: center;
-    align-items: center; */
     width: 50%;
 }
 #info-text-italy p{
@@ -306,49 +292,30 @@ figure > img{
 }
 .food-tile-two-mex{
     background-color: #3D405B;
-    width: 50%;
-    flex: 1;
 }
 .img-tile-two-mex{
-    flex: 1;
-    width: 50%;
-}
-.more-info{
-    padding-bottom: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#info-text-mex{
-    /*display: flex;
-    justify-content: center;
-    align-items: center; */
-    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1635859335886-92da36c2de3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
 }
 #info-text-mex p{
     color: white;
     text-align: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 15px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-color: #F2CC8F;
+}
+#info-text-mex{
+    width: 50%;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (min-width: 800px){
+    #tiles{
+      grid-template-columns: repeat(2,1fr );
+    }
+    .t-intro{
+      grid-template-columns: repeat(2,1fr );
+    }
+  }
 
 /*MOBILE*/
 @media screen and (max-width: 768px){
@@ -409,36 +376,5 @@ figure > img{
         transform: translateY(-8px) rotate(-45deg);
     }
     /*HOME*/
-    .row-1, .row-2, .row-3, .row-4{
-        display: block;
-    }
-    #food-tile-india, #food-tile-italy, #food-tile-china, #food-tile-mexico{
-        width: 100%;
-    }
-    #img-tile-india, #img-tile-italy, #img-tile-china, #img-tile-mexico{
-        width: 100%;
-        height: 100%;
-    }
-    #img-tile-india img, #img-tile-italy img, #img-tile-china img, #img-tile-mexico img{
-        width: 100%;
-        height: 100%;
-    }
-    /*TILES*/
-    .row{
-        display: block;
-    }
-    .food-tile-two-india, .food-tile-two-italy, .food-tile-two-china, .food-tile-two-mex{
-        width: 100%;
-    }
-    .img-tile-two-india, .img-tile-two-italy, .img-tile-two-china, .img-tile-two-mex{
-        width: 100%;
-        height: 100%;
-    }
-    .img-tile-two-india img, .img-tile-two-italy img, .img-tile-two-china img, .img-tile-two-mex img{
-        width: 100%;
-        height: 100%;
-    }
-    #info-text-india, #info-text-italy, #info-text-china, #info-text-mex{
-        width: 100%;
-    }
+    
 }
