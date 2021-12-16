@@ -134,38 +134,63 @@ button > a{
   display:grid;
   grid-auto-rows: minmax(300px, auto); 
 }
+.credit-link{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.credit-wiki{
+    text-decoration: none;
+    color: #3D405B;
+    font-weight: bold;
+}
+.img-cred{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+figure{
+    color: white;
+}
 #tiles p, h4{
     color:white;
     text-align: center;
     padding: 10px;
+}
+#tiles p{
+    padding-bottom: 20px;
 }
 #tiles h4{
     font-weight: bold;
 }
 #food-tile-india{
     background-color: #3D405B;
+    padding-bottom:20px;
 }
 #img-tile-india{
-  background-image: url(https://images.unsplash.com/photo-1635859335886-92da36c2de3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+  background-image: url(https://images.unsplash.com/photo-1524492412937-b28074a5d7da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80);
 /*   min-height: 400px; */
 }
 #food-tile-italy{
     background-color: #F2CC8F;
+    padding-bottom: 20px;
 }
 #img-tile-italy{
-    background-image: url(https://images.unsplash.com/photo-1635859335886-92da36c2de3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+    background-image: url(https://images.unsplash.com/photo-1529260830199-42c24126f198?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80);
 }
 #food-tile-china{
     background-color: #81B29A;
+    padding-bottom: 20px;
 }
 #img-tile-china{
-    background-image: url(https://images.unsplash.com/photo-1635859335886-92da36c2de3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+    background-image: url(https://images.unsplash.com/photo-1566455123644-5c94561acf9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80);
 }
 #food-tile-mexico{
     background-color: #E07A5F;
+    padding-bottom: 20px;
 }
 #img-tile-mexico{
-    background-image: url(https://images.unsplash.com/photo-1635859335886-92da36c2de3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+    background-image: url(https://images.unsplash.com/photo-1512813195386-6cf811ad3542?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
 }
 
 /*FOOTER*/
@@ -197,6 +222,48 @@ button > a{
   display:grid;
   grid-auto-rows: minmax(300px, auto);
 }
+.cuisine-intro{
+    text-decoration: none;
+    color: #3D405B;
+    font-weight: bold;
+}
+.recipe{
+    display: flex;
+}
+.recipe-link{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.rec-contain{
+    padding-bottom: 100px;
+}
+.ingredients li{
+    list-style: none;
+}
+.ingredients p{
+    width: 200px;
+}
+.ingredient-container h3{
+    color: white;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.instruction-container{
+    padding-left: 50px;
+}
+.instruction-container h3{
+    color: white;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.instructions li{
+    color: white;
+}
+
+
+
+    
 /*CHINA*/
 .food-tile-two-china h1, p{
     color: white;
@@ -209,7 +276,13 @@ button > a{
     background-color: #3D405B;
 }
 .img-tile-two-china{
-    background-image: url(https://images.unsplash.com/photo-1635859335886-92da36c2de3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+    background: no-repeat;
+}
+.img-layer-blue{
+background-color: #3D405B;
+}
+.img-layer-yell{
+    background-color: #F2CC8F;
 }
 .more-info{
     padding-top: 50px;
@@ -242,7 +315,7 @@ button > a{
     background-color: #F2CC8F; 
 }
 .img-tile-two-india{
-    background-image: url(https://images.unsplash.com/photo-1635859335886-92da36c2de3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+    background: no-repeat;
 }
 
 #info-text-india{
@@ -268,7 +341,7 @@ button > a{
     background-color: #F2CC8F; 
 }
 .img-tile-two-italy{
-    background-image: url(https://images.unsplash.com/photo-1635859335886-92da36c2de3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+    background: no-repeat;
 }
 
 #info-text-italy{
@@ -294,7 +367,7 @@ button > a{
     background-color: #3D405B;
 }
 .img-tile-two-mex{
-    background-image: url(https://images.unsplash.com/photo-1635859335886-92da36c2de3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+    background: no-repeat;
 }
 #info-text-mex p{
     color: white;
